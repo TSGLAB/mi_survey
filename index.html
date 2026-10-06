@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="The State of Interpretability for Safety: Survey of Foundations, Methods, and Research Directions">
+  <meta name="description" content="The State of Interpretability for AI Safety: A Survey of Foundations, Methods, and Research Directions">
   <meta name="keywords" content="Interpretability, AI Safety, Mechanistic Interpretability, Neural Networks">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The State of Interpretability for Safety</title>
+  <title>The State of Interpretability for AI Safety: A Survey of Foundations, Methods, and Research Directions</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
@@ -23,20 +23,39 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">The State of Interpretability for Safety: Survey of Foundations, Methods, and Research Directions</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="#">Author One</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="#">Author Two</a><sup>2</sup>,</span>
-            <span class="author-block">
-              <a href="#">Author Three</a><sup>1</sup>
-            </span>
+          <h1 class="title is-1 publication-title">The State of Interpretability for AI Safety: A Survey of Foundations, Methods, and Research Directions</h1>
+          <div class="publication-authors author-list author-list-core">
+            <div class="author-entry"><span class="author-name">Fazl Barez<sup>† *</sup></span><span class="author-affiliation">TSG Lab, University of Oxford &amp; Martian</span></div>
+            <div class="author-entry"><span class="author-name">Tung-Yu Wu<sup>†</sup></span><span class="author-affiliation">TSG Lab, University of Oxford</span></div>
           </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Institution One,</span>
-            <span class="author-block"><sup>2</sup>Institution Two</span>
+          <div class="publication-authors author-list author-list-contributors">
+            <div class="author-entry"><span class="author-name">Aaron Maiwald</span><span class="author-affiliation">University of Oxford</span></div>
+            <div class="author-entry"><span class="author-name">Abir Harrasse</span><span class="author-affiliation">Martian</span></div>
+            <div class="author-entry"><span class="author-name">Adi Simhi</span><span class="author-affiliation">Technion</span></div>
+            <div class="author-entry"><span class="author-name">Antía García</span><span class="author-affiliation">Martian</span></div>
+            <div class="author-entry"><span class="author-name">Belinda Z. Li</span><span class="author-affiliation">Anthropic</span></div>
+            <div class="author-entry"><span class="author-name">Damiano Fornasiere</span><span class="author-affiliation">LawZero</span></div>
+            <div class="author-entry"><span class="author-name">Florent Draye</span><span class="author-affiliation">Max Planck Institute for Intelligent Systems</span></div>
+            <div class="author-entry"><span class="author-name">Gabriele Dominici</span><span class="author-affiliation">Università della Svizzera italiana</span></div>
+            <div class="author-entry"><span class="author-name">Hunar Batra</span><span class="author-affiliation">University of Oxford</span></div>
+            <div class="author-entry"><span class="author-name">Michael Lan</span><span class="author-affiliation">Martian</span></div>
+            <div class="author-entry"><span class="author-name">Narmeen Fatimah Oozeer</span><span class="author-affiliation">Martian</span></div>
+            <div class="author-entry"><span class="author-name">Or David Shafran</span><span class="author-affiliation">Tel Aviv University</span></div>
+            <div class="author-entry"><span class="author-name">Riley Harris</span><span class="author-affiliation">University of Oxford</span></div>
+            <div class="author-entry"><span class="author-name">Robert Trager</span><span class="author-affiliation">University of Oxford</span></div>
+            <div class="author-entry"><span class="author-name">Sara Hooker</span><span class="author-affiliation">Adaption Labs</span></div>
+            <div class="author-entry"><span class="author-name">Shay B. Cohen</span><span class="author-affiliation">University of Edinburgh</span></div>
+            <div class="author-entry"><span class="author-name">Shriyash Kaustubh Upadhyay</span><span class="author-affiliation">Martian</span></div>
+            <div class="author-entry"><span class="author-name">Yanai Elazar</span><span class="author-affiliation">Bar-Ilan University</span></div>
+            <div class="author-entry"><span class="author-name">Yu Zhao</span><span class="author-affiliation">University of Edinburgh</span></div>
+            <div class="author-entry"><span class="author-name">Ziyu Yao</span><span class="author-affiliation">George Mason University</span></div>
+          </div>
+          <div class="publication-authors author-list author-list-core">
+            <div class="author-entry"><span class="author-name">Naomi Saphra<sup>†</sup></span><span class="author-affiliation">Boston University</span></div>
+            <div class="author-entry"><span class="author-name">Mor Geva<sup>†</sup></span><span class="author-affiliation">Tel Aviv University</span></div>
+            <div class="author-entry"><span class="author-name">Yoshua Bengio<sup>†</sup></span><span class="author-affiliation">LawZero &amp; Mila, Université de Montréal</span></div>
+            <div class="author-entry"><span class="author-name">Stella Biderman<sup>†</sup></span><span class="author-affiliation">EleutherAI</span></div>
+            <div class="author-entry"><span class="author-name">Hassan Sajjad<sup>†</sup></span><span class="author-affiliation">Dalhousie University</span></div>
           </div>
 
           <div class="column has-text-centered">
@@ -58,7 +77,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="#" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://github.com/TSGLAB/Interpretability_Survey_Safety" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
@@ -84,30 +103,12 @@
   </div>
 </section>
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            [abstract here]
-          </p>
-          <p>
-            [Additional paragraphs as needed...]
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{author2025interpretability,
-  author    = {Author, One and Author, Two and Author, Three},
-  title     = {The State of Interpretability for Safety: Survey of Foundations, Methods, and Research Directions},
+  author    = {Fazl Barez and Tung-Yu Wu and Aaron Maiwald and Abir Harrasse and Adi Simhi and Antía García and Belinda Z. Li and Damiano Fornasiere and Florent Draye and Gabriele Dominici and Hunar Batra and Michael Lan and Narmeen Fatimah Oozeer and Or David Shafran and Riley Harris and Robert Trager and Sara Hooker and Shay B. Cohen and Shriyash Kaustubh Upadhyay and Yanai Elazar and Yu Zhao and Ziyu Yao and Naomi Saphra and Mor Geva and Yoshua Bengio and Stella Biderman and Hassan Sajjad},
+  title     = {The State of Interpretability for AI Safety: A Survey of Foundations, Methods, and Research Directions},
   journal   = {arXiv preprint arXiv:XXXX.XXXXX},
   year      = {2025},
 }</code></pre>
@@ -120,7 +121,7 @@
       <a class="icon-link" href="#">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="#" class="external-link">
+      <a class="icon-link external-link" href="https://github.com/TSGLAB/Interpretability_Survey_Safety" aria-label="Codebase on GitHub">
         <i class="fab fa-github"></i>
       </a>
     </div>

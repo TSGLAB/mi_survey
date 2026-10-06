@@ -155,3 +155,41 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+/* Keep author order row by row, with affiliations beside each name. */
+.author-list {
+  margin: 1.25rem auto;
+  text-align: left;
+}
+
+.author-list-core {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.author-list-contributors {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem 1.5rem;
+}
+
+.author-name {
+  font-weight: 700;
+  margin-right: 0.4rem;
+}
+
+.author-name sup {
+  margin-left: 0.15rem;
+}
+
+.author-affiliation {
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+  .author-list-contributors {
+    grid-template-columns: 1fr;
+  }
+}
