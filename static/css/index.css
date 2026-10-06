@@ -156,40 +156,56 @@ body {
   border-radius: 5px;
 }
 
-/* Keep author order row by row, with affiliations beside each name. */
+/* Compact, centered publication header. */
 .author-list {
-  margin: 1.25rem auto;
-  text-align: left;
+  margin: 1.5rem auto 1rem;
+  max-width: 900px;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.9;
 }
 
-.author-list-core {
-  display: flex;
-  flex-direction: column;
-  gap: 0.65rem;
+.author-list .author-block {
+  margin: 0 0.35rem;
 }
 
-.author-list-contributors {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.65rem 1.5rem;
-}
-
-.author-name {
-  font-weight: 700;
-  margin-right: 0.4rem;
-}
-
-.author-name sup {
+.author-list sup,
+.publication-affiliations sup {
   margin-left: 0.15rem;
+  font-size: 0.65em;
 }
 
-.author-affiliation {
-  font-size: 0.875rem;
-  font-style: italic;
+.publication-affiliations {
+  max-width: 860px;
+  margin: 0 auto 1rem;
+  color: #666;
+  font-size: 0.85rem;
+  line-height: 1.8;
+}
+
+.affiliation-block {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.publication-affiliations sup {
+  margin-right: 0.2rem;
+}
+
+.teaser .container {
+  max-width: 1200px;
 }
 
 @media screen and (max-width: 768px) {
-  .author-list-contributors {
-    grid-template-columns: 1fr;
+  .publication-title.title {
+    font-size: 2rem;
+  }
+
+  .author-list {
+    font-size: 1rem;
+  }
+
+  .hero-body {
+    padding: 2rem 1rem;
   }
 }
