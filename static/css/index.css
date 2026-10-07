@@ -689,6 +689,96 @@ a:focus {
   font-size: 0.875rem;
 }
 
+/* Hero: separate title, subtitle, authors and affiliations visually */
+.publication-title {
+  font-size: 2.75rem !important;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.publication-subtitle {
+  display: block;
+  margin-top: 0.9rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.35;
+  color: var(--text-secondary);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.author-list {
+  max-width: 880px;
+  margin: 0 auto 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: var(--text-primary);
+}
+
+.author-list .author-block {
+  margin-right: 0.35rem;
+}
+
+.author-list sup,
+.affiliation-list sup {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 0.68em;
+  margin-left: 1px;
+}
+
+.affiliation-list {
+  max-width: 820px;
+  margin: 0 auto 1rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-color);
+  font-size: 0.9rem;
+  font-weight: 400 !important;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.affiliation-list .author-block {
+  margin-right: 0.85rem;
+}
+
+.affiliation-list sup {
+  margin-left: 0;
+  margin-right: 2px;
+}
+
+.author-notes {
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .publication-title {
+    font-size: 2rem !important;
+  }
+
+  .publication-subtitle {
+    font-size: 1.15rem;
+  }
+
+  .author-list {
+    font-size: 0.95rem !important;
+  }
+
+  .affiliation-list {
+    font-size: 0.82rem !important;
+  }
+}
+
 /* Disabled link buttons (e.g. paper not yet released) line up with the link ones */
 .link-block .button[disabled] {
   margin: 8px 4px;
