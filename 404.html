@@ -3,9 +3,9 @@
 <title>This site has moved</title>
 <meta name="robots" content="noindex">
 <script>
-  // Any other old path: same path at the new address.
-  var p = location.pathname.indexOf("/mi_survey/") === 0 ? location.pathname.slice(11) : "";
-  location.replace("https://tsglab.github.io/mechinterp-safety/" + p + location.search + location.hash);
+  // Every page the old site published has its own redirect page, so anything that lands here
+  // never existed: send it to the new homepage rather than to a 404 on the new site.
+  location.replace("https://tsglab.github.io/mechinterp-safety/");
 </script>
 </head><body><h1>This site has moved</h1>
 <p>The interactive handbook is now at <a href="https://tsglab.github.io/mechinterp-safety/">https://tsglab.github.io/mechinterp-safety/</a>.</p></body></html>
